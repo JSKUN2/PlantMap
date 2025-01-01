@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..400;1,100..700&display=swap" rel="stylesheet">
+    <title>PlantMap</title>
+    <style>
+        body{
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-image: url("vecteezy_watercolor-green-branch-with-leaves-hand-painting-floral_6315342.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .scroll{
+            position: absolute;
+            display: block;
+            height: 50px;
+            left: 0;
+        }
+        .up {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        h1{
+            margin: 0;
+            margin-top: 20px;
+            font-family: "Roboto", serif;
+            font-size: 60px;
+        }
+        .text{
+            text-align: center;
+            top: 0;
+            position: absolute;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        .kata{
+            font-family: "Roboto Mono", serif;
+            margin: 0;
+        }
+        #map {
+            margin-top: 20px;
+            width: 841px;
+            height: 311.5px;
+        }
+        .isi{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .kiri{
+            height: 100vh;
+            width: 32%;
+            border-right: 1px solid black;
+            position: relative;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .kanan{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh;
+            width: 68%;
+            position: relative;
+        }
+        .search{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 70px;
+            border-bottom: 1px black solid;
+            border-radius: 8px;
+            justify-content: space-between;
+        }
+        .search button{
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            margin-left: 12px;
+            margin-right: 12px;
+            background: none;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .list-tanaman{
+            font-size: 20px;
+            height: 30px;
+            margin-left: 8px;
+            margin-right: 5px;
+        }
+        .list-tanaman:hover{
+            color:white;
+            background-color: black;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .kembali{
+            border: 1px solid black;
+            background-color: none;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            height: 50px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .kembali:active{
+            background-color: black;
+            color: white;
+        }
+        .kartu{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 0;
+            margin: auto;
+            height: 600px;
+            width: 900px;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .image{
+            height: 300px;
+            width: 100%;
+            border-bottom: 1px solid black;
+            border-bottom-left-radius: 5000px;
+            border-bottom-right-radius: 5000px;
+        }
+        .latin, .lokal, .tipe{
+            margin: 0;
+            padding: 0;
+        }
+        .lokal{
+            font-family: "Roboto Mono", serif;
+        }
+        .latin{
+            font-family: 'Palatino Linotype Italic', serif;
+            src: url("Palatino\ Linotype/palatinolinotype_italic.ttf");
+        }
+        #Grup{
+            text-transform: capitalize;    
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom-left-radius: 5000px;
+            border-bottom-right-radius: 5000px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="up">
+    <div class="text">
+        <h1>Pilih Lokasi</h1>
+        <hr width="500px">
+        <p id="kata"></p>
+    </div>
+    <img src="peta-removebg.png" usemap="#image-map" id="map">
+
+    <map name="image-map">
+        <area target="" alt="Sumatera" id="sumatera" href="#" coords="0,86,165,239,257,168,118,0,0,0" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Jawa" id="jawa" href="#" coords="165,240,220,198,365,227,352,260,356,269,353,272" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Bali-dan-sekitarnya" id="nusa-tenggara-dan-sekitarnya" href="#" coords="353,273,358,268,353,260,355,255,614,234,607,311,503,311" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });"});">
+        <area target="" alt="Kalimantan" id="kalimantan" href="#" coords="186,36,270,165,384,194,440,86,415,19,234,26" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Sulawesi" id="sulawesi" href="#" coords="408,217,467,230,531,211,529,119,595,24,575,12,513,79,455,75" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Maluku" id="maluku" href="#" coords="619,50,539,120,535,151,569,184,669,181" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Papua" id="papua" href="#" coords="644,104,778,103,841,150,841,288,617,267,674,181" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">        
+    </map>
+</div>
+
+<script>
+const kataArray = ['JAWA ', 'KALIMANTAN ', 'MALUKU ', 'NUSA TENGGARA DAN SEKITARNYA ', 'PAPUA ', 'SULAWESI ', 'SUMATERA '];
+let indexSaatIni = 0;
+const element = document.getElementById("kata");
+let kataSaatIni = "";
+let tulis = true;
+let index = 0;
+
+function updateKata() {
+    const kata = kataArray[indexSaatIni];
+
+    if (tulis) {
+        kataSaatIni = kata.slice(0, index + 1);
+        element.textContent = kataSaatIni;
+        index++;
+        if (index === kata.length) {
+            tulis = false;
+        }
+    } else {
+        kataSaatIni = kata.slice(0, index - 1);
+        element.textContent = kataSaatIni;
+        index--;
+        if (index === 0) {
+            indexSaatIni = (indexSaatIni + 1) % kataArray.length;
+            tulis = true;
+        }
+    }
+
+    setTimeout(updateKata, tulis ? 200 : 200);
+}
+
+updateKata();
+
+let grup = [];
+let indexGrup = 0;
+let dataTanaman = {};
+let lokasiSaatIni = "";
+
+function list(event) {
+    const idTombol = event.target.id;
+
+    if (idTombol === 'sebelumnya') {
+        indexGrup = (indexGrup - 1 + grup.length) % grup.length;
+    } else if (idTombol === 'setelahnya') {
+        indexGrup = (indexGrup + 1) % grup.length;
+    }
+
+    document.getElementById("Grup").textContent = grup[indexGrup];
+    updateListBasedOnGroup();
+}
+
+const areaMap = document.querySelectorAll('area');
+areaMap.forEach(area => {
+    area.addEventListener('click', function(event) {    
+        event.preventDefault();
+        
+        const lokasiId = event.target.id;
+        lokasiSaatIni = lokasiId;
+        const fileJson = `${lokasiId}.json`;
+        console.log(fileJson);
+        fetch(fileJson)
+            .then(response => response.json())
+            .then(data => {
+                dataTanaman = data;
+
+                grup = Object.keys(data);
+                if (grup.length > 0) {
+                    indexGrup = 0;
+                    document.getElementById("Grup").textContent = grup[indexGrup];
+                }
+                updateListBasedOnGroup();
+            })
+            .catch(error => {
+                console.error('Terjadi kesalahan saat memuat file JSON:', error);
+            });
+    });
+});
+
+function updateListBasedOnGroup() {
+    const listContainer = document.querySelector('.List');
+    listContainer.innerHTML = ''; 
+
+    const grupAktif = grup[indexGrup]?.toLowerCase();
+    const dataGrup = dataTanaman[grupAktif] || [];
+
+    if (dataGrup && Array.isArray(dataGrup)) {
+        dataGrup.forEach(item => {
+            const listItem = document.createElement('div');
+            listItem.classList.add("list-tanaman");
+            listItem.textContent = item.nama_lokal;
+
+            listItem.addEventListener('click', () => {
+                document.querySelector('.lokal').textContent = item.nama_lokal;
+                document.querySelector('.latin').textContent = item.nama_latin;
+
+                const folderPath = `img/${lokasiSaatIni}/${item.nama_lokal.toLowerCase().replace(/\s+/g, '-')}.jpg`;
+
+                const imageElement = document.querySelector('.image img');
+                imageElement.src = folderPath;
+                imageElement.alt = item.nama_lokal;
+            });
+
+            listContainer.appendChild(listItem);
+        });
+    } else {
+        listContainer.textContent = `Data tidak ditemukan untuk grup ${grupAktif}`;
+    }
+}
+
+
+</script>
+
+<div class="isi">
+    <div class="kiri">
+        <div class="search">
+            <button id="sebelumnya" onclick="list(event)"><</button>
+            <h4 id="Grup">...</h4>
+            <button id="setelahnya" onclick="list(event)">></button>
+        </div>
+        <div class="List"></div>
+    </div>
+    <div class="kanan">
+        <div class="kartu">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <h1 class="lokal"></h1>
+            <h2><i class="latin"></i></h2>
+        </div>
+        <button class="kembali" onclick="document.querySelector('.up').scrollIntoView({ behavior: 'smooth', block: 'start' });">Back</button>
+    </div>
+</div>
+
+</body>
+</html>

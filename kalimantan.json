@@ -1,0 +1,58 @@
+{
+  "penyaring_udara (lingkungan)": [
+    {"nama_lokal": "Ramin", "nama_latin": "Gonystylus bancanus"},
+    {"nama_lokal": "Bengkirai", "nama_latin": "Shorea laevis"},
+    {"nama_lokal": "Tengkawang", "nama_latin": "Shorea pinanga"},
+    {"nama_lokal": "Rengas", "nama_latin": "Gluta"},
+    {"nama_lokal": "Kalangkala", "nama_latin": "Litsea garciae"}
+  ],
+  "penahan_erosi (lingkungan)": [
+    {"nama_lokal": "Ramin", "nama_latin": "Gonystylus bancanus"},
+    {"nama_lokal": "Bengkirai", "nama_latin": "Shorea laevis"},
+    {"nama_lokal": "Tengkawang", "nama_latin": "Shorea pinanga"},
+    {"nama_lokal": "Ulin", "nama_latin": "Eusideroxylon zwageri"},
+    {"nama_lokal": "Kalangkala", "nama_latin": "Litsea garciae"}
+  ],
+  "penyubur_tanah (lingkungan)": [
+    {"nama_lokal": "Ramin", "nama_latin": "Gonystylus bancanus"},
+    {"nama_lokal": "Kalangkala", "nama_latin": "Litsea garciae"},
+    {"nama_lokal": "Bengkirai", "nama_latin": "Shorea laevis"}
+
+  ],
+  "buah (pangan)": [
+    {"nama_lokal": "Kalangkala", "nama_latin": "Litsea garciae"},
+    {"nama_lokal": "Mangga Kasturi", "nama_latin": "Litsea garciae"}
+
+
+  ],
+  "sayuran (pangan)": [
+    {"nama_lokal": "Bawang dayak", "nama_latin": "Allium cepa var. aggregatum"}
+
+  ],
+    "antiseptik": [
+      {"nama_lokal": "Bajakah", "nama_latin": "Spatholobus littoralis"},
+      {"nama_lokal": "Tengkawang", "nama_latin": "Shorea pinanga"},
+      {"nama_lokal": "Bawang dayak", "nama_latin": "Allium cepa var. aggregatum"}
+
+
+    ],
+    "penurun_tekanan_darah": [
+      {"nama_lokal": "Bajakah", "nama_latin": "Spatholobus littoralis"},
+      {"nama_lokal": "Bawang dayak", "nama_latin": "Allium cepa var. aggregatum"}
+    ],
+    "anti_peradangan": [
+      {"nama_lokal": "Bajakah", "nama_latin": "Spatholobus littoralis"},
+      {"nama_lokal": "Bawang dayak", "nama_latin": "Allium cepa var. aggregatum"}
+
+    ],
+    "pembersih_toksin": [
+      {"nama_lokal": "Ramin", "nama_latin": "Gonystylus bancanus"},
+      {"nama_lokal": "Bengkirai", "nama_latin": "Shorea laevis"},
+      {"nama_lokal": "Bajakah", "nama_latin": "Spatholobus littoralis"},
+      {"nama_lokal": "Kalangkala", "nama_latin": "Litsea garciae"},
+      {"nama_lokal": "Bawang dayak", "nama_latin": "Allium cepa var. aggregatum"},
+      {"nama_lokal": "Tengkawang", "nama_latin": "Shorea pinanga"}
+
+    ]
+  }
+  

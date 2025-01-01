@@ -1,0 +1,31 @@
+{
+  "penyaring_udara (lingkungan)": [
+    { "nama_lokal": "Kemuning", "nama_latin": "Murraya paniculata" }
+  ],
+  "penahan_erosi (lingkungan)": [
+    { "nama_lokal": "Pohon Torem", "nama_latin": "Manilkara kanosiensis" }
+  ],
+  "penyubur_tanah (lingkungan)": [
+  ],
+  "buah (konsumsi)": [
+    { "nama_lokal": "Matoa", "nama_latin": "Pometia pinnata" },
+    { "nama_lokal": "Pala", "nama_latin": "Myristica fragrans" }
+  ],
+  "sayuran (konsumsi)": [
+    { "nama_lokal": "Sagu", "nama_latin": "Colocasia esculenta" }
+  ],
+  "antiseptik (kesehatan)": [
+    { "nama_lokal": "Cengkeh", "nama_latin": "Syzygium aromaticum" },
+    { "nama_lokal": "Kemuning", "nama_latin": "Murraya paniculata" }
+  ],
+  "penurun_tekanan_darah (kesehatan)": [
+    { "nama_lokal": "Pala", "nama_latin": "Myristica fragrans" }
+  ],
+  "anti_peradangan (kesehatan)": [
+    { "nama_lokal": "Cengkeh", "nama_latin": "Syzygium aromaticum" },
+    { "nama_lokal": "Pala", "nama_latin": "Myristica fragrans" }
+  ],
+  "pembersih_toksin (kesehatan)": [
+    { "nama_lokal": "Pala", "nama_latin": "Myristica fragrans" }
+  ]
+}

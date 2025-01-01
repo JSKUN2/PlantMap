@@ -1,0 +1,35 @@
+{
+  "penyaring_udara (lingkungan)": [
+    { "nama_lokal": "Majegau", "nama_latin": "Dysoxylum densiflorum" },
+    { "nama_lokal": "Kayu Putih", "nama_latin": "Melaleuca leucadendra" }
+  ],
+  "penahan_erosi (lingkungan)": [
+    { "nama_lokal": "Kayu Baku", "nama_latin": "Casuarina equisetifolia" },
+    { "nama_lokal": "Rumput Savana Sumba", "nama_latin": "Heteropogon contortus" }
+  ],
+  "penyubur_tanah (lingkungan)": [
+    { "nama_lokal": "Ketak", "nama_latin": "Lygodium circinnatum" },
+    { "nama_lokal": "Kayu Baku", "nama_latin": "Casuarina equisetifolia" }
+  ],
+  "buah (konsumsi)": [
+    { "nama_lokal": "Lontar Sumba", "nama_latin": "Borassus flabellifer" }
+  ],
+  "sayuran (konsumsi)": [],
+  "antiseptik (kesehatan)": [
+    { "nama_lokal": "Kayu Putih", "nama_latin": "Melaleuca leucadendra" },
+    { "nama_lokal": "Cendana", "nama_latin": "Santalum album" }
+  ],
+  "penurun_tekanan_darah (kesehatan)": [
+    { "nama_lokal": "Cendana", "nama_latin": "Santalum album" },
+    { "nama_lokal": "Kayu Tengger", "nama_latin": "Senna timorensis" }
+  ],
+  "anti_peradangan (kesehatan)": [
+    { "nama_lokal": "Bunga Sumbawa", "nama_latin": "Wrightia pubescens" },
+    { "nama_lokal": "Kayu Putih", "nama_latin": "Melaleuca leucadendra" }
+  ],
+  "pembersih_toksin (kesehatan)": [
+    { "nama_lokal": "Rotan Flores", "nama_latin": "Calamus erinaceus" },
+    { "nama_lokal": "Lontar Sumba", "nama_latin": "Borassus flabellifer" }
+  ]
+}
+

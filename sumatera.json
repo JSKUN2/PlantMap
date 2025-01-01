@@ -1,0 +1,32 @@
+{
+  "penyaring_udara (lingkungan)": [
+    { "nama_lokal": "Puspa", "nama_latin": "Schima wallichii" },
+    { "nama_lokal": "Kapur Barus", "nama_latin": "Cinnamomum camphora" }
+  ],
+  "penahan_erosi (lingkungan)": [
+    { "nama_lokal": "Sala", "nama_latin": "Shorea robusta" },
+    { "nama_lokal": "Puspa", "nama_latin": "Schima wallichii" }
+  ],
+  "penyubur_tanah (lingkungan)": [
+    { "nama_lokal": "Andaliman", "nama_latin": "Zanthoxylum acanthopodium" },
+    { "nama_lokal": "Sala", "nama_latin": "Shorea robusta" },
+    { "nama_lokal": "Kapur Barus", "nama_latin": "Cinnamomum camphora" }
+  ],
+  "buah (konsumsi)": [
+    { "nama_lokal": "Kenari", "nama_latin": "Canarium indicum" }
+  ],
+  "antiseptik (kesehatan)": [
+    { "nama_lokal": "Andaliman", "nama_latin": "Zanthoxylum acanthopodium" },
+    { "nama_lokal": "Gaharu", "nama_latin": "Aquilaria malaccensis" }
+  ],
+  "penurun_tekanan_darah (kesehatan)": [
+    { "nama_lokal": "Andaliman", "nama_latin": "Zanthoxylum acanthopodium" }
+  ],
+  "anti_peradangan (kesehatan)": [
+    { "nama_lokal": "Gaharu", "nama_latin": "Aquilaria malaccensis" },
+    { "nama_lokal": "Puspa", "nama_latin": "Schima wallichii" }
+  ],
+  "pembersih_toksin (kesehatan)": [
+    { "nama_lokal": "Gaharu", "nama_latin": "Aquilaria malaccensis" }
+  ]
+}

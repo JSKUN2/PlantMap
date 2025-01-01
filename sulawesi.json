@@ -1,0 +1,33 @@
+{
+  "penyaring_udara (lingkungan)": [
+    { "nama_lokal": "Manis Manis", "nama_latin": "Aglaonema commutatum" }
+  ],
+  "penahan_erosi (lingkungan)": [
+    { "nama_lokal": "Trembesi", "nama_latin": "Samanea saman" }
+  ],
+  "penyubur_tanah (lingkungan)": [
+    { "nama_lokal": "Trembesi", "nama_latin": "Samanea saman" }
+  ],
+  "buah (konsumsi)": [
+    { "nama_lokal": "Tabelak", "nama_latin": "Durio graveolens" },
+    { "nama_lokal": "Kenari", "nama_latin": "Canarium indicum" }
+  ],
+  "sayuran (konsumsi)": [
+    { "nama_lokal": "Talas", "nama_latin": "Colocasia esculenta" }
+  ],
+  "antiseptik (kesehatan)": [
+    { "nama_lokal": "Senggani", "nama_latin": "Ficus variegata" }
+  ],
+  "penurun_tekanan_darah (kesehatan)": [
+    { "nama_lokal": "Senggani", "nama_latin": "Ficus variegata" }
+  ],
+  "anti_peradangan (kesehatan)": [
+    { "nama_lokal": "Senggani", "nama_latin": "Ficus variegata" }
+  ],
+  "pembersih_toksin (kesehatan)": [
+    { "nama_lokal": "Senggani", "nama_latin": "Ficus variegata" }
+  ],
+  "umbi (konsumsi)": [
+    { "nama_lokal": "Talas", "nama_latin": "Colocasia esculenta" }
+  ]
+}
