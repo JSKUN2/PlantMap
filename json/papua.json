@@ -1,0 +1,47 @@
+{
+  "penyaring_udara (lingkungan)": [
+    { "nama_lokal": "Sia-Sia", "nama_latin": "Syzygium malaccense" },
+    { "nama_lokal": "Woromo", "nama_latin": "Manilkara kanosiensis" },
+    { "nama_lokal": "Fikus", "nama_latin": "Ficus benjamina" }
+  ],
+  "penahan_erosi (lingkungan)": [
+    { "nama_lokal": "Kayu Bulan", "nama_latin": "Falcataria moluccana" },
+    { "nama_lokal": "Woromo", "nama_latin": "Manilkara kanosiensis" },
+    { "nama_lokal": "Matoa", "nama_latin": "Pometia pinnata" }
+  ],
+  "penyubur_tanah (lingkungan)": [
+    { "nama_lokal": "Kalimbi", "nama_latin": "Acacia mangium" },
+    { "nama_lokal": "Woromo", "nama_latin": "Manilkara kanosiensis" },
+    { "nama_lokal": "Kayu Manis Papua", "nama_latin": "Cinnamomum burmannii" }
+  ],
+  "buah (pangan)": [
+    { "nama_lokal": "Buah Merah", "nama_latin": "Pandanus conoideus" },
+    { "nama_lokal": "Woromo", "nama_latin": "Manilkara kanosiensis" },
+    { "nama_lokal": "Matoa", "nama_latin": "Pometia pinnata" }
+  ],
+  "umbi (pangan)": [
+    { "nama_lokal": "Keladi Papua", "nama_latin": "Cyrtosperma merkusii" },
+    { "nama_lokal": "Ubi Papua", "nama_latin": "Ipomoea batatas solossa" }
+  ],
+  "sayuran (pangan)": [
+    { "nama_lokal": "Pakis Hutan Papua", "nama_latin": "Diplazium esculentum" },
+    { "nama_lokal": "Daun Gedi Papua", "nama_latin": "Abelmoschus manihot" }
+  ],
+  "antiseptik (obat-obatan)": [
+    { "nama_lokal": "Sia-Sia", "nama_latin": "Syzygium malaccense" },
+    { "nama_lokal": "Cendana", "nama_latin": "Santalum album" }
+  ],
+  "penurun_tekanan_darah (obat-obatan)": [
+    { "nama_lokal": "Matoa", "nama_latin": "Pometia pinnata" },
+    { "nama_lokal": "Kayu Manis Papua", "nama_latin": "Cinnamomum burmannii" }
+  ],
+  "anti_peradangan (obat-obatan)": [
+    { "nama_lokal": "Pohon Bungur", "nama_latin": "Lagerstroemia speciosa" }
+  ],
+  "pembersih_toksin (obat-obatan)": [
+    { "nama_lokal": "Kayu Bulan", "nama_latin": "Falcataria moluccana" }
+  ],
+  "antioksidan (kesehatan)": [
+    { "nama_lokal": "Woromo", "nama_latin": "Manilkara kanosiensis" }
+  ]
+}
