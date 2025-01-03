@@ -180,25 +180,41 @@
             border-bottom-left-radius: 5000px;
             border-bottom-right-radius: 5000px;
         }
-        @media only screen and (max-width: 3cm) {
-            .kartu{
-                width: 700px;
-                height: 480px;
-            }
-            .image{
-                height:200px;
-            }
-            .lokal{
-                font-size: 1.5em;
-            }
-            .latin{
-                font-size:1.17em;
-            }
-            #map{
-                width: 420.5px;
-                height: 155.75;
-            }
-        }
+@media only screen and (max-width: 1080px) {
+    .kartu {
+        width: 80%;
+        height: auto;
+        font-size: 0.9em; /* Menyesuaikan ukuran font */
+    }
+    .image {
+        height: 250px; /* Skala gambar sesuai */
+    }
+    .lokal {
+        font-size: 1.4em; /* Perbesar teks untuk proporsi yang baik */
+    }
+    .latin {
+        font-size: 1.1em;
+    }
+    .isi {
+        flex-direction: column; /* Pastikan elemen tersusun vertikal */
+    }
+    .kiri {
+        width: 100%; /* Skala penuh untuk kiri */
+        position: relative; /* Pastikan tidak tumpang tindih */
+    }
+    .kanan {
+        width: 100%; /* Skala penuh untuk kanan */
+        margin-top: 20px; /* Beri jarak antar elemen */
+    }
+    #map {
+        width: 70%; /* Peta lebih kecil */
+        height: auto; /* Pertahankan rasio aspek */
+    }
+    h1 {
+        font-size: 50px; /* Judul lebih kecil */
+    }
+}
+
     </style>
 </head>
 <body>
