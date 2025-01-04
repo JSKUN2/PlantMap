@@ -181,7 +181,63 @@
             border-bottom-left-radius: 5000px;
             border-bottom-right-radius: 5000px;
         }
+        #map-mobile{
+            display: none;
+            width: 420.5px;
+            height: 155.75px;
+        }
+        @media (max-width: 1080px) {
+            #map-mobile{
+                display: block;
+            }
+            #map{
+                display: none;
+            }
+            .isi{
+                flex-direction: column;
+            }
+            .kiri {
+                height: 30%;
+                width: 100%;
+                border-right: 1px solid black;
+                position: relative;
+                box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                background: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                display: flex;
+                flex-direction: column;
+                border-bottom: solid 1px black;
+            }
 
+            .search {
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+            }
+
+            .List {
+                flex-grow: 1;
+                overflow-x: auto;
+                padding: 10px;
+            }
+            .kanan{
+                height: 70%;
+                width: 100%;
+            }
+            .image{
+                height: 250px;
+            }
+            .lokal{
+                font-size: 38px;
+            }
+            .latin{
+                font-size: 20px;
+            }
+            .text h1{
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -202,6 +258,17 @@
         <area target="" alt="Sulawesi" id="sulawesi" href="#" coords="408,217,467,230,531,211,529,119,595,24,575,12,513,79,455,75" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
         <area target="" alt="Maluku" id="maluku" href="#" coords="619,50,539,120,535,151,569,184,669,181" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
         <area target="" alt="Papua" id="papua" href="#" coords="644,104,778,103,841,150,841,288,617,267,674,181" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">        
+    </map>
+    <img src="img/peta-removebg.png" usemap="#image-map-mobile" id="map-mobile">
+
+    <map name="image-map-mobile">
+        <area target="" alt="Sumatera" id="sumatera" href="#" coords="0,43,82,119,128,84,59,0,0,0" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Jawa" id="jawa" href="#" coords="82,120,110,99,182,113,176,130,178,134" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Bali-dan-sekitarnya" id="nusa-tenggara-dan-sekitarnya" href="#" coords="176,136,179,134,176,130,177,127,307,117,303,155,251,155" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });"});">
+        <area target="" alt="Kalimantan" id="kalimantan" href="#" coords="93,18,135,82,192,97,220,43,207,10,117,13" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Sulawesi" id="sulawesi" href="#" coords="204,108,233,115,265,105,264,60,297,12,287,6,256,39,227,37" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Maluku" id="maluku" href="#" coords="309,25,269,60,267,75,284,92,334,91" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+        <area target="" alt="Papua" id="papua" href="#" coords="322,52,389,51,420,75,420,144,307,133,337,91" shape="poly" onclick="document.querySelector('.isi').scrollIntoView({ behavior: 'smooth', block: 'start' });">        
     </map>
 </div>
 
