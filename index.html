@@ -12,6 +12,13 @@
     <link rel="shortcut icon" href="img/image.png" type="image/x-icon">
     <title>PlantMap</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow: hidden;
+        }
         body{
             overflow: hidden;
             margin: 0;
@@ -20,7 +27,7 @@
             background-image: url("img/vecteezy_watercolor-green-branch-with-leaves-hand-painting-floral_6315342.svg");
             background-repeat: no-repeat;
             background-size: 100%;
-            width: 100vw;
+            width: 100%;
         }
         .scroll{
             position: absolute;
@@ -188,6 +195,10 @@
             height: 155.75px;
         }
         @media (max-width: 1080px) {
+            body{
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
             #map-mobile{
                 display: block;
             }
